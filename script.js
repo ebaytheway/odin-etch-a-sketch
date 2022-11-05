@@ -41,7 +41,30 @@ function changeColor(e){
    }
 }
 
+function selectMode (mode){
+    if(currentMode == colorMode){
+        colorMode.classList.remove("btn-select")
+    }
+    else if(currentMode == rainbowMode){
+        rainbowMode.classList.remove("btn-select")
+    }
+    else if(currentMode == earsierMode){
+        earsierMode.classList.remove("btn-select")
+    }
+
+
+    if(mode == colorMode){
+        colorMode.classList.add("btn-select");
+    }
+    else if(mode == rainbowMode){
+        rainbowMode.classList.add("btn-select");
+    }
+    else if(mode == earsierMode){
+        earsierMode.classList.add("btn-select");
+    }
+}
 function changeMode(mode){
+    selectMode(mode)
     currentMode = mode;
 }
 

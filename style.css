@@ -74,3 +74,7 @@ input[type="color"]::-webkit-color-swatch {
     transition: 0.1s ease-in-out;
 }
 
+.btn-select{
+    background-color: black;
+    color: white;
+}
